@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>도미노피자 주문하기</title>
+
+   <!-- 사용자 css -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/sub_order.css">
+
+   <!-- 외부 css 링크(웹 아이콘 폰트 - fontawesome) -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+   <!-- 홈페이지 소개글 -->
+   <meta name="description" content="배달피자 전문 프렌차이즈 도미노피자">
+
+   <!-- 검색 키워드 등록 -->
+   <meta name="keywords" content="피자전문점, 배달피자, 내맘대로피자, 도미노피자">
+
+   <!-- 나눔고딕 웹폰트 추가 -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+
+   <!-- 사용자 자바스크립트 -->
+   <!-- <script src="js/script.js"></script> -->
+
+   <!-- 자바, 헤더 메뉴 -->
+  <script src="js/script_list.js"></script>
+  
+   <!-- 이미지 슬라이더 스크립트 -->
+   <script src="js/img_slider.js"></script>
+
+</head>
+<body>
+
+   <header id="main_header">
+      <!-- 로고 -->
+      <div class="logobox">
+      <h1>
+         <a href="./">
+         <img src="images/logo.png" alt="Domino pizza">
+         </a>
+      </h1>
+      </div>
+
+      <!-- 메인메뉴 -->
+      <nav id="main_gnb">
+         <ul class="depth1">
+            <li><a href="index_list_1.html">피자</a>
+               <ul class="depth2">
+                  <li><a href="index_list_1.html">주문하기</a></li>
+                  <li><a href="#">내맘대로피자</a></li>
+                  <li><a href="#">퀵오더</a></li>
+                  <li><a href="#">도미챗</a></li>
+                  <li><a href="#">단체주문</a></li>
+               </ul>
+            </li>
+            <li><a href="#">사이드디시</a>
+               <ul class="depth2">
+                  <li><a href="#">사이드디시</a></li>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">피클&소스</a></li>
+               </ul>
+            </li>
+            <li><a href="sub_company.html">도미노피자</a>
+               <ul class="depth2">
+                  <li><a href="sub_company.html">회사소개</a></li>
+                  <li><a href="#">사회공헌활동</a></li>
+                  <li><a href="#">가맹점모집</a></li>
+                  <li><a href="#">인재채용</a></li>
+               </ul>
+            </li>
+            <li><a href="#">특가&이벤트</a>
+               <ul class="depth2">
+                  <li><a href="#">특가메뉴</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">할인&제휴</a></li>
+               </ul>
+            </li>
+            <li><a href="#">상품권</a>
+               <ul class="depth2">
+                  <li><a href="#">E-쿠폰</a></li>
+                  <li><a href="#">상품권</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- 메인 콘텐츠 섹션 -->
+   <section id="sub_orderpage">
+      <div class="sub_orderpage">
+         <h2>주문하기</h2>
+      </div>
+   </section>
+   
+   <section id="orderpage">
+      <div class="pizza_img">
+         <h1></h1>
+         <img src="images/pp1.jpg" alt="">
+      </div>
+      <div class="pizza_info">
+         <h2>지역 한정 판매<br><span>참맛 문어 피자</span></h2>
+         <p>쫄깃, 탱글하게 물오른 제철을 맞은 <span class="blue">동해산 문어</span>,</p>
+         <p>골고루 뿌린 고소한 <span class="red">와규 크럼블</span>의 참 잘어울리는 만남!</p>
+         <p><small>※ 한정판매 상품으로 조기 소진될 수 있습니다.</small></p>
+      </div>
+      <div class="pizza_price">
+         <h2>사이즈 & 가격</h2>
+         <div class="pricelist">
+            <input type="checkbox" checked name="pricelist" value="large">Large - <span class="red">36,900원</span>
+            <input type="checkbox" name="pricelist" value="medium">Medium - <span class='blue'>31,000원</span>
+         </div>
+      </div>
+      <div class="order_btn">
+            <h1><a href="#">주문하기</a></h1>
+      </div>
+
+   </section>
+  
+  
+   <!-- footer 영역 -->
+   <footer id= "main_footer">
+      <div id="footer_box">
+         <ul id="footer_left">
+            <li>
+               <h2>전화주문</h2>
+               <p id="call_num">
+                  <i class="fas fa-phone-square"></i> 1577-3082
+               </p>
+            </li>
+            <li>
+               <ul id="footer_sns">
+                  <li><a href="#">
+                     <img src="images/Facebook.png" alt="sns1" width="40">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="images/Instagram.png" alt="sns2" width="40">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="images/YouTube.png" alt="sns3" width="40">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="images/Twitter.png" alt="sns4" width="40">
+                  </a></li>
+               </ul>
+            </li>
+         </ul>
+         <ul id="footer_right">
+            <div class="f_right">
+            <li><a href="sub_company.html">회사소개</a></li>
+            <li><a href="#" class="focus">개인정보 처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
+            </div>
+            <li>
+               <ul id='footer_info'>
+                  <li>
+                     <p>135-928 서울특별시 강남구 언주로 315 청오디피케이㈜ | 문의 : webmaster@dominos.co.kr</p>
+                     <p>사업자 등록번호: 220-81-03371 통신판매업신고: 강남 5064호 개인정보  보호책임자 : 이명윤 대표이사: 오광현</p>
+                     <p>
+                        Copyrightⓒ2017 Domino’s Pizza All rights reserved.
+                     </p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+
+      </div>
+      <div id="footer_btm">
+            <img src="images/footer_bg.png" alt="">
+         </div>
+      
+   
+      </footer>
+</body>
+</html>

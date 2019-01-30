@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.popup_ksm{
+    position: absolute;
+    /* left: 570px; */
+    /* top: 210px; */
+    left: 30px;
+    top: 30px;
+
+    border-radius: 10px;
+    width: 520px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.8);
+    /* border: 1px solid #ccc; */
+    z-index: 200;
+
+    cursor: move;
+}
+.list_popup{
+    width: 500px;
+}
+.bc{
+   float: left;
+   width: 140px;
+   height: 35px;
+   border-radius: 4px;
+   background: #e51937;
+   color: #fff;
+   /* font-weight: bold; */
+   font-size: 1.5em;
+   text-align: center;
+   line-height: 1.8;
+   margin-left: 180px;
+   margin-top: 5px;
+}
+.bc:hover{
+    background: #207bd1;
+}

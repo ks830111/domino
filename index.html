@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>도미노피자 홈페이지</title>
+
+   <!-- 외부 css 링크(웹 아이콘 폰트 - fontawesome) -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+   <!-- 홈페이지 소개글 -->
+   <meta name="description" content="배달피자 전문 프렌차이즈 도미노피자">
+
+   <!-- 검색 키워드 등록 -->
+   <meta name="keywords" content="피자전문점, 배달피자, 내맘대로피자, 도미노피자">
+
+   <!-- 나눔고딕 웹폰트 추가 -->
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+   
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+
+   <!-- jquery UI -->
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+   <!-- bxslider CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+   <!-- bxslider 자바스크립트 플러그인 -->
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+   <!-- 사용자 css -->
+   <link rel="stylesheet" href="css/style.css">
+   
+   <!-- 이미지 슬라이더 스크립트 -->
+   <script src="js/img_slider.js"></script>
+
+   <!-- 자바, 헤더 메뉴 -->
+   <script src="js/script_list.js"></script>
+
+</head>
+<body>
+ <!-- 팝업창 -->
+ <div class="layer_popup show">
+      <div class="close_popup">
+         <img src="images/close.png" alt="close" width="30">
+      </div>
+      <div class="clear"></div>
+     <!--팝업창 만들기-->
+     <div class="popup_con">
+        <h1> 일부 제품 가격 조정 안내문 </h1><br>
+        <div class="main_text">
+        <p class="text1">항상 도미노를 찾아주시는 모든 분들께 감사드립니다.</p><br>
+        <ul class="text2">
+            <li>도미노 피자는 고객님들께 더 좋은 재료로 맛있는 피자를 빠르게 드실 수 있도록 최선의 노력을 다하고 있습니다.</li>
+            <li><br>하지만 최근 지속적인 임차료,인건비,원재료 등의 물가상승으로 인하여 <br>부득이하게 <span>2019년 1월 1일</span> 부로 피자 품목에 한해<br> 가격을 인상하게 되었습니다.</li>
+            <li><br>고객님들께 더 좋은 서비스제공을 위함이니,<br>고객님들의 많은 양해 부탁드립니다.<br></li>
+            <li>앞으로 도미노피자는 더 좋은 품질의 맛있는 피자를 제공할 수 있도록 <br>늘 최선을 다하겠습니다.<br><br></li>
+            <li>감사합니다.</li>
+        </ul>
+      </div>
+        <div class="logo_1">
+           <img src="images/logo5.png" alt="" width="60">
+           
+         </div>
+     </div>
+     </div>
+   <script>
+      $(function () {
+   
+         // 팝업 상자 드래그 시키기
+         $('.layer_popup').draggable();
+   
+         $('.close_popup').click(function () {
+   
+            // $('.layer_popup').removeClass('show');
+            $('.layer_popup').hide();
+         });
+      })
+   </script>
+   
+
+   <header id="main_header">
+      <!-- 로고 -->
+      <div class="logobox">
+      <h1>
+         <a href="./">
+         <img src="images/logo.png" alt="Domino pizza">
+         </a>
+      </h1>
+      </div>
+
+      <!-- 메인메뉴 -->
+      <nav id="main_gnb">
+         <ul class="depth1">
+            <li><a href="index_list_1.html">피자</a>
+               <ul class="depth2">
+                  <li><a href="index_list_1.html">주문하기</a></li>
+                  <li><a href="#">내맘대로피자</a></li>
+                  <li><a href="#">퀵오더</a></li>
+                  <li><a href="#">도미챗</a></li>
+                  <li><a href="#">단체주문</a></li>
+               </ul>
+            </li>
+            <li><a href="#">사이드디시</a>
+               <ul class="depth2">
+                  <li><a href="#">사이드디시</a></li>
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">피클&소스</a></li>
+               </ul>
+            </li>
+            <li><a href="sub_company.html">도미노피자</a>
+               <ul class="depth2">
+                  <li><a href="sub_company.html">회사소개</a></li>
+                  <li><a href="#">사회공헌활동</a></li>
+                  <li><a href="#">가맹점모집</a></li>
+                  <li><a href="#">인재채용</a></li>
+               </ul>
+            </li>
+            <li><a href="#">특가&이벤트</a>
+               <ul class="depth2">
+                  <li><a href="#">특가메뉴</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">할인&제휴</a></li>
+               </ul>
+            </li>
+            <li><a href="#">상품권</a>
+               <ul class="depth2">
+                  <li><a href="#">E-쿠폰</a></li>
+                  <li><a href="#">상품권</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- 메인 비쥬얼 배너 -->
+   <section id="main_banner">
+      <!-- 이미지 슬라이더 -->
+      <div class="slider">
+         <div class="sliders">
+            <img src="images/banner1.png" alt="배너1">
+            <img src="images/banner2-1.png" alt="배너2">
+            <img src="images/banner3.png" alt="배너3">
+         </div>
+         <div class="clear"></div>
+      </div>
+      <ul class="slider_indicator">
+         <li><a href="#" class="active"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+      </ul>
+   </section>
+
+   <!-- 메인 콘텐츠 섹션 -->
+
+   <!-- 메인버튼 섹션 -->
+   <section id="main_con">
+      <div class="main_order">
+         <a href="index_list_1.html"><img src="images/order5.png" alt="주문하기"></a>
+      </div>
+      <div class="main_gift">
+         <img src="images/new_final.png" alt="신메뉴&베스트메뉴">
+      </div>
+      <div class="main_new">
+         <img src="images/gift_final.png" alt="선물하기">
+      </div>
+      <div class="main_notice">
+         <img src="images/notice3.png" alt="공지사항">
+      </div>
+   </section>
+
+   <!-- 퀵메뉴 섹션 -->
+   <section id="q_menu">
+      <div class="q_menubox">
+         <ul>
+            <li class="q_box"><a href="#"><img src="images/main_domichat.png" alt="도미챗"><br>도미챗</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_quick_order.png" alt="퀵오더"><br>퀵오더</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_mykitchen.png" alt="내맘대로피자"><br>내맘대로피자</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_group_order.png" alt="단체주문"><br>단체주문</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_recruit.png" alt="매장직원채용"><br>매장직원채용</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_open_survey.png" alt="오픈서베이"><br>오픈서베이</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_domino.png" alt="회사소개"><br>회사소개</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_new2.png" alt="창업안내"><br>창업안내</a></li>
+            <li class="q_box"><a href="#"><img src="images/main_qna.png" alt="고객센터"><br>고객센터</a></li>
+         </ul>
+      </div>
+   </section>
+   <!-- 상품권 배너 -->
+   <section id="giftcard">
+      <div id="giftcard1">
+         <a href="#"><img src="images/giftcard.png" alt=""></a>
+      </div>
+
+   </section>
+
+   </section>
+   <!-- sns section -->
+   <section id="sns_gallery">
+         <h2>Domino_ Story </h2>
+         <ul id="sns_photo">
+            <li><a href="https://www.instagram.com/p/Brgfpp4gDBc/" target="_blank"><img src="images/sns2.jpg" alt="1"></a></li>
+            <li><a href="#"><img src="images/sns1.jpg" alt="2"></a></li>
+            <li><a href="#"><img src="images/sns3.jpg" alt="3"></a></li>
+            <li><a href="#"><img src="images/sns4.jpg" alt="4"></a></li>
+            <li><a href="#"><img src="images/sns5.jpg" alt="5"></a></li>
+            <li><a href="#"><img src="images/sns6.jpg" alt="6"></a></li>
+            <li><a href="#"><img src="images/sns7.jpg" alt="7"></a></li>
+            <li><a href="#"><img src="images/sns8.jpg" alt="8"></a></li>
+            <li><a href="#"><img src="images/sns9.jpg" alt="9"></a></li>
+            <li><a href="#"><img src="images/sns10.jpg" alt="10"></a></li>
+            <li><a href="#"><img src="images/sns11.jpg" alt="11"></a></li>
+            <li><a href="#"><img src="images/sns12.jpg" alt="12"></a></li>
+         </ul>
+   
+   </section>
+
+  
+   <!-- footer 영역 -->
+   <footer id= "main_footer">
+      <div id="footer_box">
+         <ul id="footer_left">
+            <li>
+               <h2>전화주문</h2>
+               <p id="call_num">
+                  <i class="fas fa-phone-square"></i> 1577-3082
+               </p>
+            </li>
+            <li>
+               <ul id="footer_sns">
+                  <li><a href="#">
+                     <img src="images/Facebook.png" alt="sns1" width="40">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="images/Instagram.png" alt="sns2" width="40">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="images/YouTube.png" alt="sns3" width="40">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="images/Twitter.png" alt="sns4" width="40">
+                  </a></li>
+               </ul>
+            </li>
+         </ul>
+         <ul id="footer_right">
+            <div class="f_right">
+            <li><a href="sub_company.html">회사소개</a></li>
+            <li><a href="#" class="focus">개인정보 처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">고객센터</a></li>
+            </div>
+            <li>
+               <ul id='footer_info'>
+                  <li>
+                     <p>135-928 서울특별시 강남구 언주로 315 청오디피케이㈜ | 문의 : webmaster@dominos.co.kr</p>
+                     <p>사업자 등록번호: 220-81-03371 통신판매업신고: 강남 5064호 개인정보  보호책임자 : 이명윤 대표이사: 오광현</p>
+                     <p>
+                        Copyrightⓒ2017 Domino’s Pizza All rights reserved.
+                     </p>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+
+      </div>
+      <div id="footer_btm">
+         <img src="images/footer_bg.png" alt="">
+      </div>
+      
+   
+      </footer>
+
+           
+</body>
+</html>

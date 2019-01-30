@@ -1,0 +1,42 @@
+/* 팝업 스타일 */
+*{
+    margin:0;
+    padding:0;
+ }
+ .layer_popup{
+    position: absolute;
+    left: 50px;
+    top:100px;
+    width:520px;
+    height:600px;
+    border:1px solid #ccc; 
+    padding:10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
+    border-radius:2em;
+    background-color: #0095e1;
+    cursor:move;
+ }
+ .layer_popup{
+     display: none;
+ }
+ .layer_popup.show{
+     display: block;
+ }
+ .layer_popup h3{
+    font-size:24px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+ }
+   .layer_popup > div{
+     text-align: right;
+ }
+ .btn-close{
+ width:70px;
+ color: black;
+ background: #fee705;
+ margin-top: 8px;
+ margin-right: 200px;
+ font-size:16px;
+ }
